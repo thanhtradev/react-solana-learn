@@ -11,6 +11,7 @@ import logo from 'static/images/solanaLogo.svg'
 import brand from 'static/images/solanaLogoMark.svg'
 
 import './index.less'
+import Splt from './splt'
 
 function View() {
   const { connection } = useConnection()
@@ -121,6 +122,9 @@ function View() {
               Transfer
             </Button>
           </Space>
+        </Col>
+        <Col span={24} style={{ padding: 20 }}>
+          <Splt />
         </Col>
       </Row>
     </Layout>
